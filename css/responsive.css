@@ -1,0 +1,181 @@
+/* 
+ * Responsive Styles for The City Burger and Cafeteria
+ * Author: Developer
+ * Version: 1.0
+ */
+
+/* ======= Large Screens (Laptops, Desktops) ======= */
+@media screen and (max-width: 1200px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+    }
+}
+
+/* ======= Medium Screens (Tablets, Small Laptops) ======= */
+@media screen and (max-width: 992px) {
+    /* Header */
+    .nav-links {
+        gap: 20px;
+    }
+    
+    /* Hero Section */
+    .hero {
+        padding: 100px 0 40px;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.3rem;
+    }
+    
+    /* About Section */
+    .about-us .container {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-content {
+        order: 1;
+    }
+    
+    .about-image {
+        order: 0;
+    }
+    
+    /* Contact Page */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .map-responsive {
+        padding-bottom: 60%;
+    }
+}
+
+/* ======= Small Screens (Mobile Devices) ======= */
+@media screen and (max-width: 768px) {
+    /* Header & Navigation */
+    .hamburger-menu {
+        display: flex;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        background-color: var(--secondary-color);
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        gap: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transform: translateY(-200%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 1000;
+    }
+    
+    .nav-links.active {
+        transform: translateY(0);
+    }
+    
+    /* Hero Section */
+    .hero {
+        padding: 80px 0 40px;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.1rem;
+    }
+    
+    .hero-cta {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    /* Section Titles */
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    /* Menu Grid */
+    .items-grid, .menu-items {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    /* Quick Order Section */
+    .order-buttons, .cta-buttons, .share-buttons, .contact-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    /* Testimonials */
+    .testimonial-author {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+/* ======= Extra Small Screens ======= */
+@media screen and (max-width: 480px) {
+    /* Header */
+    .logo img {
+        height: 50px;
+    }
+    
+    .header-container {
+        padding: 10px 0;
+    }
+    
+    /* Hero Section */
+    .hero {
+        padding: 60px 0 30px;
+    }
+    
+    .hero h1 {
+        font-size: 1.7rem;
+    }
+    
+    .hero h2 {
+        font-size: 1rem;
+    }
+    
+    /* Page Banner */
+    .page-banner h1 {
+        font-size: 2rem;
+    }
+    
+    /* Section Padding */
+    section {
+        padding: 40px 0;
+    }
+    
+    /* Menu Items */
+    .menu-item {
+        flex-direction: column;
+    }
+    
+    /* Form */
+    .form-group input,
+    .form-group textarea {
+        padding: 10px;
+    }
+}

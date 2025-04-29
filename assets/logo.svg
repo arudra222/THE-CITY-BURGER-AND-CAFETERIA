@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" width="300" height="100">
+  <!-- Background -->
+  <rect width="300" height="100" rx="10" ry="10" fill="white"/>
+  
+  <!-- Circular Logo Icon -->
+  <circle cx="55" cy="50" r="35" fill="#d41e1e"/>
+  <path d="M55 25 Q45 35 45 50 Q45 65 55 75 Q65 65 65 50 Q65 35 55 25" fill="white" stroke="none"/>
+  <circle cx="55" cy="50" r="15" fill="#d41e1e"/>
+  
+  <!-- Restaurant Name -->
+  <text x="100" y="45" font-family="Montserrat, sans-serif" font-weight="bold" font-size="24" fill="#d41e1e">The City Burger</text>
+  <text x="100" y="70" font-family="Montserrat, sans-serif" font-weight="bold" font-size="24" fill="#d41e1e">and Cafeteria</text>
+  
+  <!-- Tagline -->
+  <text x="100" y="90" font-family="Open Sans, sans-serif" font-size="12" fill="#000000">Vasco's Favorite Shawarma Spot</text>
+</svg>
